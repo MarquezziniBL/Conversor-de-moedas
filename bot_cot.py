@@ -21,9 +21,9 @@ def bot_cot():
                 except BaseException:
                         mb.showerror("ERROR",BaseException)
         moedas = ["cotação dólar","cotação euro","cotação libra",
-                  "cotação won","cotação peso argentino",
-                  "cotação peso chileno", "cotação rupia indiana", 
-                  "cotação rublo russo"]
+                "cotação won","cotação peso argentino",
+                "cotação peso chileno", "cotação rupia indiana", 
+                "cotação rublo russo"]
 
         for i in range(len(moedas)):
                 try:

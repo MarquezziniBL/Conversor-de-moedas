@@ -8,13 +8,13 @@ import bot_cot as BC
 
 
 ctk.set_appearance_mode("dark")
-     
+
 def root():
     def upchromedriver():
         mb.showinfo("IMP","EM IMPLEMENTAÇÃO")
     def upvalores():
         mb.showwarning("ATENÇÃO",
-                       "Não utilize o computador até o fim da atualização!!!\nPrograma funcionando em segundo plano")
+                    "Não utilize o computador até o fim da atualização!!!\nPrograma funcionando em segundo plano")
         BC.bot_cot() 
 
         
@@ -98,15 +98,15 @@ def root():
     
     #layout app
     title_label = ctk.CTkLabel(app, text="CONVERSOR BÁSICO\nDE MOEDAS",
-                               font=("Arial", 20,"bold"))
+                            font=("Arial", 20,"bold"))
     title_label.place(x=30,y=10)
 
     cotacao_atual =ctk.CTkLabel(app, text=f"1 - Cotação atual",font=("Arial", 16,"bold"))
     cotacao_atual.place(x=1,y=70)
 
     cotacoes = ctk.CTkComboBox(app,values=["Dólar","Euro","Libra","Won","Peso Argentino", "Peso Chileno", "Rupia Indinana", 
-                                           "Rublo Russo"],
-                               dropdown_hover_color="red",variable=cot_hj, font=("Arial", 16))
+                            "Rublo Russo"],
+                            dropdown_hover_color="red",variable=cot_hj, font=("Arial", 16))
     cotacoes.place(x=1,y=95)
 
     moeda_base =ctk.CTkLabel(app, text=f"1.00 = R$", font=("Arial", 16))
